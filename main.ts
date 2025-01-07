@@ -311,10 +311,11 @@ namespace PlanetX_AILens {
     * @param fun Function list 
     */
     //% block="Switch function as %fun"
+    //% fun=2
     //% fun.fieldEditor="gridpicker"
     //% fun.fieldOptions.columns=3
     //% group="Basic" weight=95 subcategory=Vision
-    //% color=#00B1ED
+    //% color=#00FFFF
     export function switchfunc(fun: FuncList): void {
         let funcBuff = pins.i2cReadBuffer(CameraAdd, 9)
         funcBuff[0] = 0x20
